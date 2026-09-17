@@ -19,7 +19,7 @@ export default function ReadyToPlan() {
 
         <div className="mt-10 flex justify-center">
           <a
-            href="#contact"
+            href="/start-planning"
             className="inline-flex items-center gap-2 rounded-full bg-cream text-ink text-xs font-semibold uppercase tracking-[0.15em] px-7 py-4 hover:bg-cream-2 transition-colors"
           >
             Start Planning

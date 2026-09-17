@@ -20,7 +20,7 @@ export default function ServicesHero() {
           </p>
 
           <a
-            href="#contact"
+            href="/start-planning"
             className="inline-flex items-center gap-2 rounded-full bg-ink text-cream text-xs font-semibold uppercase tracking-[0.15em] px-7 py-4 hover:bg-ink-2 transition-colors"
           >
             Start Planning

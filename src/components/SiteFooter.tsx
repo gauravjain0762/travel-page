@@ -1,12 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "About", href: "#" },
-  { label: "Services", href: "/travel-services" },
-  { label: "Destinations", href: "#" },
-  { label: "Blog", href: "#" },
-  { label: "Contact", href: "#contact" },
+  { label: "Travel Services", href: "/travel-services" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const socials = [
@@ -20,41 +20,11 @@ const socials = [
       </>
     ),
   },
-  {
-    label: "Facebook",
-    icon: (
-      <path
-        d="M14 21v-7h2.5l.5-3H14V9.2c0-.9.3-1.5 1.6-1.5H17V5.2c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4v2.8H8v3h2.6v7h3.4z"
-        fill="currentColor"
-      />
-    ),
-  },
-  {
-    label: "YouTube",
-    icon: (
-      <>
-        <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" />
-      </>
-    ),
-  },
-  {
-    label: "Pinterest",
-    icon: (
-      <>
-        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" />
-        <path
-          d="M9.5 17l1.3-6M11 8.3a2.4 2.4 0 112.7 2.4c-.2 1.4-1 2.6-2.3 2.6"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </>
-    ),
-  },
 ];
 
 export default function SiteFooter() {
+  const pathname = usePathname();
+
   return (
     <footer className="bg-cream-3 pt-12 pb-6">
       <div className="container-premium">
@@ -79,7 +49,7 @@ export default function SiteFooter() {
                 key={link.label}
                 href={link.href}
                 className={`text-sm transition-colors ${
-                  link.label === "Services"
+                  link.href === pathname
                     ? "text-ink font-semibold"
                     : "text-ink/60 hover:text-ink"
                 }`}

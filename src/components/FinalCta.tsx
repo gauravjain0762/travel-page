@@ -22,7 +22,7 @@ export default function FinalCta() {
         </p>
 
         <div className="mt-8 flex justify-center">
-          <a href="#" className="inline-flex btn-pill-gold">
+          <a href="/start-planning" className="inline-flex btn-pill-gold">
             Start Planning
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
               <path

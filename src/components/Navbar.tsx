@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const links = [
-  { label: "Home", href: "/", active: true },
+  { label: "Home", href: "/" },
   { label: "Travel Services", href: "/travel-services" },
   { label: "Instagram", href: "#" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar({
@@ -17,6 +18,7 @@ export default function Navbar({
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -66,28 +68,31 @@ export default function Navbar({
         </Link>
 
         <nav className="hidden lg:flex items-center gap-10">
-          {links.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className={`relative text-sm pb-1 transition-colors ${
-                textLight
-                  ? "text-cream/85 hover:text-cream"
-                  : "text-ink/80 hover:text-ink"
-              } ${
-                link.active
-                  ? `after:absolute after:left-0 after:bottom-0 after:h-px after:w-full ${
-                      textLight ? "after:bg-cream" : "after:bg-ink"
-                    }`
-                  : ""
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const active = link.href === pathname;
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                className={`relative text-sm pb-1 transition-colors ${
+                  textLight
+                    ? "text-cream/85 hover:text-cream"
+                    : "text-ink/80 hover:text-ink"
+                } ${
+                  active
+                    ? `after:absolute after:left-0 after:bottom-0 after:h-px after:w-full ${
+                        textLight ? "after:bg-cream" : "after:bg-ink"
+                      }`
+                    : ""
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
-        <a href="#contact" className="hidden lg:inline-flex btn-pill-gold">
+        <a href="/start-planning" className="hidden lg:inline-flex btn-pill-gold">
           Start Planning
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
             <path
@@ -128,18 +133,23 @@ export default function Navbar({
       {open && (
         <div className="lg:hidden bg-ink border-t border-line">
           <div className="container-premium flex flex-col gap-5 py-6">
-            {links.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="text-cream/85 text-sm"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {links.map((link) => {
+              const active = link.href === pathname;
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className={`text-sm ${
+                    active ? "text-cream font-semibold" : "text-cream/85"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
             <a
-              href="#contact"
+              href="/start-planning"
               onClick={() => setOpen(false)}
               className="inline-flex btn-pill-gold w-full mt-2"
             >

@@ -54,12 +54,7 @@ export default function OurProcess() {
           </h2>
         </div>
 
-        <div
-          className="grid"
-          style={{
-            gridTemplateColumns: "1fr 28px 1fr 28px 1fr 28px 1fr",
-          }}
-        >
+        <div className="grid grid-cols-1 gap-y-10 lg:gap-y-0 lg:[grid-template-columns:1fr_28px_1fr_28px_1fr_28px_1fr]">
           {steps.map((step, i) => (
             <Fragment key={step.number}>
               <div>
@@ -83,12 +78,12 @@ export default function OurProcess() {
                 <h3 className="font-semibold text-ink text-[0.95rem] mb-2">
                   {step.title}
                 </h3>
-                <p className="text-ink/55 text-sm leading-relaxed max-w-[220px]">
+                <p className="text-ink/55 text-sm leading-relaxed max-w-none lg:max-w-[220px]">
                   {step.desc}
                 </p>
               </div>
               {i < steps.length - 1 && (
-                <div className="flex justify-center pt-1.5">
+                <div className="hidden lg:flex justify-center pt-1.5">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                     <path
                       d="M9 6l6 6-6 6"
@@ -107,7 +102,7 @@ export default function OurProcess() {
 
         <div className="mt-16 flex justify-center">
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-full border border-ink/20 text-ink text-xs font-semibold uppercase tracking-[0.15em] px-7 py-4 hover:border-ink/40 transition-colors"
           >
             Start Your Travel Enquiry

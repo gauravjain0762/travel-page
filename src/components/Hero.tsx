@@ -27,7 +27,7 @@ export default function Hero() {
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
-          <a href="#contact" className="inline-flex btn-pill-gold">
+          <a href="/start-planning" className="inline-flex btn-pill-gold">
             Start Planning
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
               <path

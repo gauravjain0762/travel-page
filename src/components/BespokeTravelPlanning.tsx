@@ -70,7 +70,7 @@ export default function BespokeTravelPlanning() {
           </div>
 
           <a
-            href="#contact"
+            href="/contact"
             className="mt-10 inline-flex items-center gap-2 rounded-full bg-ink text-cream text-xs font-semibold uppercase tracking-[0.15em] px-7 py-4 hover:bg-ink-2 transition-colors"
           >
             Plan My Trip
