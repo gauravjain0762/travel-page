@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Toast from "./Toast";
 
 export default function ContactSection() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
+  const [showToast, setShowToast] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,6 +21,7 @@ export default function ContactSection() {
       });
       if (!res.ok) throw new Error("Request failed");
       setStatus("sent");
+      setShowToast(true);
       setFullName("");
       setEmail("");
       setMessage("");
@@ -148,6 +151,11 @@ export default function ContactSection() {
           </form>
         )}
       </div>
+      <Toast
+        show={showToast}
+        message="Your message was sent successfully!"
+        onClose={() => setShowToast(false)}
+      />
     </section>
   );
 }

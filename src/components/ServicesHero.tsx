@@ -38,8 +38,8 @@ export default function ServicesHero() {
 
         <div className="relative h-[380px] sm:h-[420px] rounded-2xl overflow-hidden shadow-[0_30px_60px_-20px_rgba(11,19,32,0.25)]">
           <Image
-            src="/Righthero.png"
-            alt="Woman overlooking the colorful cliffside town of Positano"
+            src="/jo-lord-C9HqBpQzyds-unsplash.jpg"
+            alt="Woman in a wide-brimmed hat overlooking the New York City skyline at dusk"
             fill
             priority
             className="object-cover"

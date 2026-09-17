@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Toast from "./Toast";
+import { digitsOnly, todayISO } from "@/lib/formUtils";
 
 const vacationStyles = [
   "Relax & Unwind",
@@ -91,6 +93,7 @@ export default function TravelQuestionnaire() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [showToast, setShowToast] = useState(false);
 
   const toggleStyle = (style: string) => {
     setSelectedStyles((prev) =>
@@ -118,6 +121,7 @@ export default function TravelQuestionnaire() {
       });
       if (!res.ok) throw new Error("Request failed");
       setSubmitted(true);
+      setShowToast(true);
     } catch {
       setSubmitError("Something went wrong. Please try again.");
     } finally {
@@ -141,6 +145,11 @@ export default function TravelQuestionnaire() {
             within one business day.
           </p>
         </div>
+        <Toast
+          show={showToast}
+          message="Your questionnaire was submitted successfully!"
+          onClose={() => setShowToast(false)}
+        />
       </section>
     );
   }
@@ -202,9 +211,13 @@ export default function TravelQuestionnaire() {
                 id="phone"
                 name="phone"
                 type="tel"
+                inputMode="numeric"
                 required
                 className={inputClass()}
                 placeholder="(000) 000-0000"
+                onChange={(e) => {
+                  e.currentTarget.value = digitsOnly(e.currentTarget.value);
+                }}
               />
               <Helper>
                 Please enter a valid phone number. Format: (000) 000-0000.
@@ -243,6 +256,7 @@ export default function TravelQuestionnaire() {
                 id="travelDates"
                 name="travelDates"
                 type="date"
+                min={todayISO()}
                 required
                 className={`${inputClass()} cursor-pointer`}
                 onClick={(e) => e.currentTarget.showPicker?.()}

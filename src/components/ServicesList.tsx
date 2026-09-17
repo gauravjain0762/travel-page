@@ -93,7 +93,7 @@ export default function ServicesList() {
                   {s.desc}
                 </p>
                 <a
-                  href="#"
+                  href="/contact"
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:text-gold transition-colors"
                 >
                   Learn More

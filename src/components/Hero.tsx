@@ -4,8 +4,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-ink">
       <Image
-        src="/hero-background.png"
-        alt="Couple relaxing in an infinity pool overlooking Santorini at sunset"
+        src="/hero-background.jpg"
+        alt="Couple sharing a candlelit toast beside an infinity pool overlooking misty mountains"
         fill
         priority
         className="object-cover"
@@ -39,7 +39,7 @@ export default function Hero() {
               />
             </svg>
           </a>
-          <a href="#services" className="inline-flex btn-pill-outline">
+          <a href="/travel-services" className="inline-flex btn-pill-outline">
             Explore Our Services
           </a>
         </div>

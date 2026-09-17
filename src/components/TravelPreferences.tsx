@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Toast from "./Toast";
+import { digitsOnly, todayISO } from "@/lib/formUtils";
 
 type TileOption = {
   label: string;
@@ -277,6 +279,7 @@ export default function TravelPreferences() {
 
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [showToast, setShowToast] = useState(false);
 
   const handleSubmit = async () => {
     setSubmitError("");
@@ -301,6 +304,7 @@ export default function TravelPreferences() {
       });
       if (!res.ok) throw new Error("Request failed");
       setSubmitted(true);
+      setShowToast(true);
     } catch {
       setSubmitError("Something went wrong. Please try again.");
     } finally {
@@ -324,6 +328,11 @@ export default function TravelPreferences() {
             one business day to start designing your trip.
           </p>
         </div>
+        <Toast
+          show={showToast}
+          message="Your preferences were submitted successfully!"
+          onClose={() => setShowToast(false)}
+        />
       </section>
     );
   }
@@ -472,8 +481,9 @@ export default function TravelPreferences() {
                   <input
                     id="phone"
                     type="tel"
+                    inputMode="numeric"
                     value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
+                    onChange={(e) => setPhone(digitsOnly(e.target.value))}
                     required
                     className={fieldClass()}
                     placeholder="(000) 000-0000"
@@ -489,6 +499,7 @@ export default function TravelPreferences() {
                   <input
                     id="dates"
                     type="date"
+                    min={todayISO()}
                     value={dates}
                     onChange={(e) => setDates(e.target.value)}
                     onClick={(e) => e.currentTarget.showPicker?.()}
@@ -561,7 +572,7 @@ export default function TravelPreferences() {
                 type="button"
                 disabled={!canContinue()}
                 onClick={() => setStep((s) => Math.min(totalSteps, s + 1))}
-                className="inline-flex btn-pill-muted disabled:opacity-40 disabled:cursor-not-allowed"
+                className="inline-flex btn-pill-gold disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 Continue
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

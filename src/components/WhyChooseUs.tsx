@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
       <div className="container-premium grid lg:grid-cols-[380px_1fr] gap-12 lg:gap-20 items-center">
         <div className="relative h-[460px] rounded-2xl overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=900&auto=format&fit=crop"
+            src="/jack-ward-rknrvCrfS1k-unsplash.jpg"
             alt="Cliffside coastal village at golden hour"
             fill
             className="object-cover"
@@ -88,6 +88,28 @@ export default function WhyChooseUs() {
               </div>
             ))}
           </div>
+
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-flex items-center gap-2 rounded-full border border-ink/20 text-ink text-xs font-semibold uppercase tracking-[0.15em] px-6 py-4 hover:border-ink/40 transition-colors"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+              <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5" />
+              <circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
+            </svg>
+            View More on Instagram
+          </a>
         </div>
       </div>
     </section>

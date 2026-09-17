@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
@@ -47,7 +48,7 @@ export default function ServicesGrid() {
             travel experiences that match your style, interests and dreams.
           </p>
           <a
-            href="#"
+            href="/travel-services"
             className="mt-8 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-ink hover:text-gold transition-colors"
           >
             Explore All Services
@@ -65,9 +66,10 @@ export default function ServicesGrid() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
           {services.map((service) => (
-            <div
+            <Link
               key={service.title}
-              className="group relative h-[150px] sm:h-[190px] lg:h-[210px] rounded-xl overflow-hidden cursor-pointer"
+              href="/contact"
+              className="group relative h-[150px] sm:h-[190px] lg:h-[210px] rounded-xl overflow-hidden cursor-pointer block"
             >
               <Image
                 src={service.image}
@@ -94,7 +96,7 @@ export default function ServicesGrid() {
                   </svg>
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

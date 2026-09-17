@@ -29,6 +29,7 @@ export default function Navbar({
 
   const bgDark = scrolled || open;
   const textLight = heroTheme === "dark" || bgDark;
+  const hideCta = pathname === "/start-planning";
 
   return (
     <header
@@ -92,7 +93,12 @@ export default function Navbar({
           })}
         </nav>
 
-        <a href="/start-planning" className="hidden lg:inline-flex btn-pill-gold">
+        <a
+          href="/start-planning"
+          className={`hidden lg:inline-flex btn-pill-gold ${
+            hideCta ? "invisible pointer-events-none" : ""
+          }`}
+        >
           Start Planning
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
             <path
@@ -148,22 +154,24 @@ export default function Navbar({
                 </Link>
               );
             })}
-            <a
-              href="/start-planning"
-              onClick={() => setOpen(false)}
-              className="inline-flex btn-pill-gold w-full mt-2"
-            >
-              Start Planning
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M5 12h14M13 6l6 6-6 6"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </a>
+            {!hideCta && (
+              <a
+                href="/start-planning"
+                onClick={() => setOpen(false)}
+                className="inline-flex btn-pill-gold w-full mt-2"
+              >
+                Start Planning
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </a>
+            )}
           </div>
         </div>
       )}
