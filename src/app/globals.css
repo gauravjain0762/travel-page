@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --ink: #0b1320;
+  --ink-2: #101c30;
+  --cream: #faf7f1;
+  --cream-2: #f2ecdf;
+  --cream-3: #fbf9f5;
+  --gold: #c9a24b;
+  --gold-2: #e3c780;
+  --gold-3: #a9895f;
+  --line: #26334a;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-cream: var(--cream);
+  --color-cream-2: var(--cream-2);
+  --color-cream-3: var(--cream-3);
+  --color-gold: var(--gold);
+  --color-gold-2: var(--gold-2);
+  --color-gold-3: var(--gold-3);
+  --color-line: var(--line);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-headline: var(--font-playfair);
+  --font-logo: var(--font-script);
+  --font-serif: var(--font-cormorant);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-headline {
+    font-family: var(--font-headline);
+  }
+
+  .font-cormorant {
+    font-family: var(--font-serif);
+  }
+
+  .font-logo {
+    font-family: var(--font-logo);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .container-premium {
+    max-width: 84rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-premium {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .btn-gold {
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, var(--gold-2), var(--gold));
+    color: var(--ink);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0.9rem 1.9rem;
+    border-radius: 2px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: 0 10px 30px -12px rgba(201, 162, 75, 0.55);
+  }
+
+  .btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px -12px rgba(201, 162, 75, 0.7);
+  }
+
+  .btn-outline {
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(250, 247, 241, 0.4);
+    color: var(--cream);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 0.9rem 1.9rem;
+    border-radius: 2px;
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--gold-2);
+    background: rgba(250, 247, 241, 0.06);
+  }
+
+  .card-lift {
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s ease;
+  }
+
+  .card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px -30px rgba(11, 19, 32, 0.35);
+  }
+
+  .btn-pill-gold {
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, var(--gold-2), var(--gold));
+    color: var(--cream);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: 0 10px 24px -10px rgba(201, 162, 75, 0.6);
+  }
+
+  .btn-pill-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px -10px rgba(201, 162, 75, 0.75);
+  }
+
+  .btn-pill-outline {
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(250, 247, 241, 0.55);
+    color: var(--cream);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+
+  .btn-pill-outline:hover {
+    border-color: var(--cream);
+    background: rgba(250, 247, 241, 0.08);
+  }
+
+  .btn-pill-muted {
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: var(--gold-3);
+    color: var(--cream);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+    padding: 0.85rem 2.2rem;
+    border-radius: 999px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.3s ease;
+    box-shadow: 0 10px 24px -10px rgba(169, 137, 95, 0.55);
+  }
+
+  .btn-pill-muted:hover {
+    background: #95794f;
+    transform: translateY(-2px);
+  }
+
+  .divider-gold {
+    height: 1px;
+    width: 3.5rem;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+}
