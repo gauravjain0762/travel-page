@@ -42,7 +42,7 @@ const features = [
 
 export default function WhyChooseUsServices() {
   return (
-    <section className="bg-cream-3 py-24 sm:py-28">
+    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium grid lg:grid-cols-[480px_1fr] gap-12 lg:gap-16 items-center">
         <div className="relative h-[300px] sm:h-[380px] rounded-2xl overflow-hidden">
           <Image
@@ -58,7 +58,7 @@ export default function WhyChooseUsServices() {
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-ink/50 mb-5">
             Why Choose Us
           </p>
-          <h2 className="font-cormorant text-4xl sm:text-[2.75rem] leading-tight text-ink mb-10">
+          <h2 className="font-cormorant font-medium text-4xl sm:text-[2.75rem] leading-tight text-ink mb-10">
             Thoughtful Planning.
             <br />
             Meaningful Experiences.

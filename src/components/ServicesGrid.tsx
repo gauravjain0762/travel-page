@@ -36,11 +36,11 @@ const services = [
 
 export default function ServicesGrid() {
   return (
-    <section className="bg-white py-24 sm:py-28">
+    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium grid lg:grid-cols-[340px_1fr] gap-10 lg:gap-16 items-start">
         <div>
           <p className="eyebrow text-gold mb-4">Our Services</p>
-          <h2 className="font-display text-4xl sm:text-[2.75rem] leading-[1.15] text-ink">
+          <h2 className="font-cormorant font-medium text-4xl sm:text-[2.75rem] leading-[1.15] text-ink">
             Travel Experiences, Designed Around You
           </h2>
           <p className="mt-6 text-ink/55 text-[0.95rem] leading-relaxed max-w-xs">

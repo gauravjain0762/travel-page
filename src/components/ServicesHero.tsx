@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function ServicesHero() {
   return (
-    <section className="bg-cream-3 pt-40 pb-24 sm:pt-48 sm:pb-28">
+    <section className="bg-cream-3 pt-40 pb-0 sm:pt-48 sm:pb-28">
       <div className="container-premium grid lg:grid-cols-2 gap-14 items-center">
         <div>
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-ink/50 mb-6">
             Our Services
           </p>
-          <h1 className="font-cormorant text-5xl sm:text-6xl leading-tight text-ink mb-6">
+          <h1 className="font-cormorant font-medium text-5xl sm:text-6xl leading-tight text-ink mb-6">
             Travel Planning,
             <br />
             <span className="italic">Tailored to You.</span>
@@ -21,7 +21,7 @@ export default function ServicesHero() {
 
           <a
             href="/start-planning"
-            className="inline-flex items-center gap-2 rounded-full bg-ink text-cream text-xs font-semibold uppercase tracking-[0.15em] px-7 py-4 hover:bg-ink-2 transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-ink text-cream text-sm font-medium px-7 py-4 hover:bg-ink-2 transition-colors"
           >
             Start Planning
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

@@ -35,7 +35,7 @@ const reels = [
 
 export default function TravelInspiration() {
   return (
-    <section className="bg-white py-24 sm:py-28">
+    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12">
           <div>

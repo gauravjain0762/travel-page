@@ -58,7 +58,7 @@ export default async function AdminDashboard() {
             <p className="text-xs tracking-[0.2em] uppercase text-cream/60">
               Wanderly
             </p>
-            <h1 className="font-cormorant text-xl">Admin Dashboard</h1>
+            <h1 className="font-cormorant font-medium text-xl">Admin Dashboard</h1>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-sm text-cream/70">{session?.user?.email}</span>
@@ -93,7 +93,7 @@ export default async function AdminDashboard() {
         </nav>
 
         <section id="contact">
-          <h2 className="font-cormorant text-2xl text-ink mb-4">
+          <h2 className="font-cormorant font-medium text-2xl text-ink mb-4">
             Contact Submissions
           </h2>
           <div className="bg-white rounded-xl overflow-x-auto shadow-[0_20px_40px_-30px_rgba(11,19,32,0.15)]">
@@ -132,7 +132,7 @@ export default async function AdminDashboard() {
         </section>
 
         <section id="questionnaire">
-          <h2 className="font-cormorant text-2xl text-ink mb-4">
+          <h2 className="font-cormorant font-medium text-2xl text-ink mb-4">
             Travel Discovery Questionnaire
           </h2>
           <div className="bg-white rounded-xl overflow-x-auto shadow-[0_20px_40px_-30px_rgba(11,19,32,0.15)]">
@@ -177,7 +177,7 @@ export default async function AdminDashboard() {
         </section>
 
         <section id="planning">
-          <h2 className="font-cormorant text-2xl text-ink mb-4">
+          <h2 className="font-cormorant font-medium text-2xl text-ink mb-4">
             Planning Wizard
           </h2>
           <div className="bg-white rounded-xl overflow-x-auto shadow-[0_20px_40px_-30px_rgba(11,19,32,0.15)]">

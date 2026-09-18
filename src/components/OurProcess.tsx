@@ -43,13 +43,13 @@ const steps = [
 
 export default function OurProcess() {
   return (
-    <section className="bg-cream-3 py-24 sm:py-28">
+    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium">
         <div className="text-center max-w-xl mx-auto mb-16">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-ink/50 mb-4">
             Our Process
           </p>
-          <h2 className="font-cormorant text-4xl sm:text-5xl leading-tight text-ink">
+          <h2 className="font-cormorant font-medium text-4xl sm:text-5xl leading-tight text-ink">
             From Your Dream to Your Departure
           </h2>
         </div>
@@ -57,7 +57,7 @@ export default function OurProcess() {
         <div className="grid grid-cols-1 gap-y-10 lg:gap-y-0 lg:[grid-template-columns:1fr_28px_1fr_28px_1fr_28px_1fr]">
           {steps.map((step, i) => (
             <Fragment key={step.number}>
-              <div>
+              <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
                 <svg
                   width="26"
                   height="26"
@@ -103,7 +103,7 @@ export default function OurProcess() {
         <div className="mt-16 flex justify-center">
           <a
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full border border-ink/20 text-ink text-xs font-semibold uppercase tracking-[0.15em] px-7 py-4 hover:border-ink/40 transition-colors"
+            className="inline-flex items-center gap-2 rounded-full border border-ink/20 text-ink text-sm font-medium px-7 py-4 hover:border-ink/40 transition-colors"
           >
             Start Your Travel Enquiry
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

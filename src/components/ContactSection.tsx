@@ -36,7 +36,7 @@ export default function ContactSection() {
         <p className="text-xs font-semibold tracking-[0.25em] uppercase text-gold mb-6">
           Let&apos;s Start Planning Something Extraordinary
         </p>
-        <h1 className="font-cormorant text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight text-ink">
+        <h1 className="font-cormorant font-medium text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight text-ink">
           Ready to Embark on
           <br />
           Your <span className="italic">Next</span> Adventure?
@@ -68,7 +68,7 @@ export default function ContactSection() {
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
               Message Sent
             </p>
-            <h2 className="font-cormorant text-3xl text-ink mb-3">
+            <h2 className="font-cormorant font-medium text-3xl text-ink mb-3">
               Thank You for Reaching Out
             </h2>
             <p className="text-ink/55">

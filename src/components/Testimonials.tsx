@@ -66,7 +66,7 @@ export default function Testimonials() {
   const next = () => setPage((p) => (p + 1) % pageCount);
 
   return (
-    <section className="bg-cream-3 py-24 sm:py-28">
+    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium">
         <div className="text-center max-w-xl mx-auto mb-16">
           <p className="eyebrow text-gold mb-4">Kind Words</p>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FinalCta() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden py-32 sm:py-40">
+    <section className="relative flex items-center justify-center overflow-hidden pt-[20px] pb-10 sm:pb-40">
       <Image
         src="/footer.png"
         alt="Coastal cliffs along the ocean at dusk"
@@ -14,7 +14,7 @@ export default function FinalCta() {
       <div className="absolute inset-0 bg-black/45" />
 
       <div className="container-premium relative z-10 text-center">
-        <h2 className="font-headline italic text-balance text-cream text-3xl sm:text-4xl lg:text-5xl leading-tight">
+        <h2 className="font-cormorant font-medium text-balance text-cream text-3xl sm:text-4xl lg:text-5xl leading-tight">
           Let&apos;s Create Your Perfect Journey.
         </h2>
         <p className="mt-4 text-cream/85 text-sm sm:text-base">

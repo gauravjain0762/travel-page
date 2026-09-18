@@ -12,7 +12,7 @@ const offerings = [
 
 export default function BespokeTravelPlanning() {
   return (
-    <section className="bg-cream-3 py-24 sm:py-28">
+    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium grid lg:grid-cols-[360px_1fr] gap-12 lg:gap-16 items-center">
         <div className="relative h-[460px] rounded-2xl overflow-hidden">
           <Image
@@ -28,7 +28,7 @@ export default function BespokeTravelPlanning() {
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-ink/50 mb-5">
             Bespoke Travel Planning
           </p>
-          <h2 className="font-cormorant text-4xl sm:text-[2.75rem] leading-tight text-ink mb-5">
+          <h2 className="font-cormorant font-medium text-4xl sm:text-[2.75rem] leading-tight text-ink mb-5">
             Your Ideas. Our Expertise.
             <br />
             One Unforgettable Journey.
@@ -71,7 +71,7 @@ export default function BespokeTravelPlanning() {
 
           <a
             href="/contact"
-            className="mt-10 inline-flex items-center gap-2 rounded-full bg-ink text-cream text-xs font-semibold uppercase tracking-[0.15em] px-7 py-4 hover:bg-ink-2 transition-colors"
+            className="mt-10 inline-flex items-center gap-2 rounded-full bg-ink text-cream text-sm font-medium px-7 py-4 hover:bg-ink-2 transition-colors"
           >
             Plan My Trip
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

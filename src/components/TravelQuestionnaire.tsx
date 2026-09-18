@@ -54,7 +54,7 @@ function Helper({ children }: { children: React.ReactNode }) {
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="border-t border-ink/10 mt-12 mb-8 pt-10">
-      <h2 className="font-cormorant text-2xl sm:text-[1.75rem] text-ink">
+      <h2 className="font-cormorant font-medium text-2xl sm:text-[1.75rem] text-ink">
         {children}
       </h2>
     </div>
@@ -136,7 +136,7 @@ export default function TravelQuestionnaire() {
           <p className="text-xs font-semibold tracking-[0.25em] uppercase text-gold mb-5">
             Thank You
           </p>
-          <h1 className="font-cormorant text-4xl text-ink mb-4">
+          <h1 className="font-cormorant font-medium text-4xl text-ink mb-4">
             Your Questionnaire Has Been Sent
           </h1>
           <p className="text-ink/55 leading-relaxed">
@@ -166,7 +166,7 @@ export default function TravelQuestionnaire() {
 
         <div className="rounded-2xl overflow-hidden shadow-[0_30px_60px_-30px_rgba(11,19,32,0.2)]">
           <div className="bg-cream-2 text-center px-8 py-12 sm:px-14">
-            <h2 className="font-cormorant text-3xl sm:text-4xl text-ink mb-4">
+            <h2 className="font-cormorant font-medium text-3xl sm:text-4xl text-ink mb-4">
               Travel Discovery Questionnaire
             </h2>
             <p className="text-ink/60 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">

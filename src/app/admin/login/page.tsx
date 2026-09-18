@@ -42,7 +42,7 @@ export default function AdminLoginPage() {
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">
           Wanderly
         </p>
-        <h1 className="font-cormorant text-3xl text-ink mb-6">Admin Login</h1>
+        <h1 className="font-cormorant font-medium text-3xl text-ink mb-6">Admin Login</h1>
 
         {error && (
           <p className="mb-4 text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">

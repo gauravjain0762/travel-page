@@ -317,10 +317,10 @@ export default function TravelPreferences() {
 
   if (submitted) {
     return (
-      <section className="bg-cream-3 py-24 sm:py-28">
+      <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
         <div className="container-premium max-w-lg text-center">
           <p className="eyebrow text-gold mb-4">Thank You</p>
-          <h2 className="font-cormorant text-4xl text-ink mb-4">
+          <h2 className="font-cormorant font-medium text-4xl text-ink mb-4">
             Your Journey Awaits
           </h2>
           <p className="text-ink/55 leading-relaxed">
@@ -338,7 +338,7 @@ export default function TravelPreferences() {
   }
 
   return (
-    <section className="bg-cream-3 py-24 sm:py-28">
+    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium">
         <div className="text-center max-w-2xl mx-auto">
           <p className="eyebrow text-gold mb-4">Your Perfect Journey</p>
@@ -362,7 +362,7 @@ export default function TravelPreferences() {
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">
             {stepMeta[step - 1].eyebrow}
           </p>
-          <h3 className="font-cormorant text-2xl sm:text-3xl text-ink mb-8">
+          <h3 className="font-cormorant font-medium text-2xl sm:text-3xl text-ink mb-8">
             {stepMeta[step - 1].title}
           </h3>
 

@@ -29,19 +29,36 @@ export default function SiteFooter() {
     <footer className="bg-cream-3 pt-12 pb-6">
       <div className="container-premium">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <Link href="/" className="flex items-center gap-2.5">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 4l8 15H4L12 4z"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <span className="text-sm font-semibold tracking-[0.15em] uppercase text-ink">
-              Wanderly Travel Co.
-            </span>
-          </Link>
+          <div className="flex items-center justify-between">
+            <Link href="/" className="flex items-center gap-2.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 4l8 15H4L12 4z"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <span className="text-sm font-semibold tracking-[0.15em] uppercase text-ink">
+                Wanderly Travel Co.
+              </span>
+            </Link>
+
+            <div className="flex items-center gap-4 md:hidden">
+              {socials.map((s) => (
+                <a
+                  key={s.label}
+                  href="#"
+                  aria-label={s.label}
+                  className="text-ink/70 hover:text-ink transition-colors"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    {s.icon}
+                  </svg>
+                </a>
+              ))}
+            </div>
+          </div>
 
           <nav className="flex flex-wrap items-center justify-center gap-x-7 gap-y-2">
             {links.map((link) => (
@@ -59,7 +76,7 @@ export default function SiteFooter() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             {socials.map((s) => (
               <a
                 key={s.label}
@@ -79,9 +96,6 @@ export default function SiteFooter() {
           <p className="text-xs text-ink/45">
             © {new Date().getFullYear()} Wanderly Travel Co. All rights
             reserved.
-          </p>
-          <p className="text-xs text-ink/45">
-            Travel &bull; Explore &bull; Create Memories
           </p>
         </div>
       </div>

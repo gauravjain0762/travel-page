@@ -61,13 +61,13 @@ const services = [
 
 export default function ServicesList() {
   return (
-    <section className="bg-cream-3 py-24 sm:py-28">
+    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-ink/50 mb-4">
             Our Services
           </p>
-          <h2 className="font-cormorant text-4xl sm:text-5xl leading-tight text-ink">
+          <h2 className="font-cormorant font-medium text-4xl sm:text-5xl leading-tight text-ink">
             How Can We Help You Travel?
           </h2>
         </div>
@@ -86,7 +86,7 @@ export default function ServicesList() {
               </div>
               <div>
                 <p className="text-xs text-ink/40 mb-2">{s.number}</p>
-                <h3 className="font-cormorant text-2xl text-ink mb-2">
+                <h3 className="font-cormorant font-medium text-2xl text-ink mb-2">
                   {s.title}
                 </h3>
                 <p className="text-ink/55 text-sm leading-relaxed mb-3 max-w-[280px]">

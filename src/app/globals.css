@@ -138,9 +138,8 @@ body {
     gap: 0.5rem;
     background: linear-gradient(135deg, var(--gold-2), var(--gold));
     color: var(--cream);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.9rem;
-    letter-spacing: 0.01em;
     padding: 0.8rem 1.6rem;
     border-radius: 999px;
     transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -176,9 +175,8 @@ body {
     gap: 0.5rem;
     background: var(--gold-3);
     color: var(--cream);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.9rem;
-    letter-spacing: 0.01em;
     padding: 0.85rem 2.2rem;
     border-radius: 999px;
     transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.3s ease;
