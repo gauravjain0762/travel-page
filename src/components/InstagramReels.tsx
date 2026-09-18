@@ -190,7 +190,7 @@ export default function InstagramReels() {
             ))}
           </div>
 
-          <div className="flex flex-row items-center gap-4 lg:pl-4 justify-center">
+          <div className="flex flex-row items-center gap-4 lg:pl-4 justify-center mb-6 lg:mb-0">
             <a
               href="#"
               className="inline-flex items-center gap-2 rounded-full border border-ink/20 text-ink text-sm font-medium px-6 py-4 whitespace-nowrap hover:border-ink/40 transition-colors"
