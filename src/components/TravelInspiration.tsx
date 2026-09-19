@@ -51,7 +51,7 @@ export default function TravelInspiration() {
 
           <a
             href="#"
-            className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink hover:border-ink/30 transition-colors whitespace-nowrap"
+            className="inline-flex items-center gap-2 mx-auto sm:mx-0 rounded-full border border-ink/15 px-5 py-3 text-sm font-medium text-ink hover:border-ink/30 transition-colors whitespace-nowrap"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <rect

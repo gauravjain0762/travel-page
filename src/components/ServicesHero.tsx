@@ -21,7 +21,7 @@ export default function ServicesHero() {
 
           <a
             href="/start-planning"
-            className="inline-flex items-center justify-center gap-2 w-[230px] rounded-full bg-ink text-cream text-sm font-medium py-4 hover:bg-ink-2 transition-colors"
+            className="flex mx-auto sm:mx-0 items-center justify-center gap-2 w-[230px] rounded-full bg-ink text-cream text-sm font-medium py-4 hover:bg-ink-2 transition-colors"
           >
             Start Planning
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

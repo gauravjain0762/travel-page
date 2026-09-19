@@ -547,13 +547,13 @@ export default function TravelPreferences() {
             </p>
           )}
 
-          <div className="mt-10 flex items-center justify-between">
+          <div className="mt-10 flex items-center justify-center sm:justify-between">
             <button
               type="button"
               onClick={() => setStep((s) => Math.max(1, s - 1))}
-              className={`inline-flex items-center gap-2 text-sm font-medium text-ink/60 hover:text-ink transition-colors ${
-                step === 1 ? "invisible" : ""
-              }`}
+              className={`${
+                step === 1 ? "hidden sm:inline-flex sm:invisible" : "inline-flex"
+              } items-center gap-2 text-sm font-medium text-ink/60 hover:text-ink transition-colors`}
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                 <path

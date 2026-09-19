@@ -93,7 +93,7 @@ export default function WhyChooseUs() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center justify-center gap-2 w-[230px] rounded-full border border-ink/20 text-ink text-sm font-medium py-4 hover:border-ink/40 transition-colors"
+            className="mt-10 flex mx-auto sm:mx-0 items-center justify-center gap-2 w-[230px] rounded-full border border-ink/20 text-ink text-sm font-medium py-4 hover:border-ink/40 transition-colors"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <rect

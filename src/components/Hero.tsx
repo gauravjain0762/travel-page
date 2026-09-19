@@ -31,8 +31,8 @@ export default function Hero() {
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-ink/45 via-ink/10 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent" />
 
       <button
         type="button"
