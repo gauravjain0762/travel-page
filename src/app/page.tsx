@@ -6,6 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import TravelInspiration from "@/components/TravelInspiration";
 import Testimonials from "@/components/Testimonials";
 import FinalCta from "@/components/FinalCta";
+import SiteFooter from "@/components/SiteFooter";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Testimonials />
         <FinalCta />
       </main>
+      <SiteFooter />
     </>
   );
 }

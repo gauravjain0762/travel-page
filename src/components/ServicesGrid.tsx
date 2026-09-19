@@ -36,7 +36,7 @@ const services = [
 
 export default function ServicesGrid() {
   return (
-    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
+    <section className="bg-cream-3 pt-[60px] sm:pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium grid lg:grid-cols-[340px_1fr] gap-10 lg:gap-16 items-start">
         <div>
           <p className="eyebrow text-gold mb-4">Our Services</p>

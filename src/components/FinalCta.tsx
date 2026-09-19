@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FinalCta() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden pt-[20px] pb-10 sm:pb-40">
+    <section className="relative flex items-center justify-center overflow-hidden pt-[60px] sm:pt-[20px] pb-10 sm:pb-40">
       <Image
         src="/footer.png"
         alt="Coastal cliffs along the ocean at dusk"
@@ -22,7 +22,7 @@ export default function FinalCta() {
         </p>
 
         <div className="mt-8 flex justify-center">
-          <a href="/start-planning" className="inline-flex btn-pill-gold">
+          <a href="/start-planning" className="inline-flex w-[230px] justify-center btn-pill-gold">
             Start Planning
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
               <path

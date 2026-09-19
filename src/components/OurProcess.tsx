@@ -43,7 +43,7 @@ const steps = [
 
 export default function OurProcess() {
   return (
-    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
+    <section className="bg-cream-3 pt-[60px] sm:pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium">
         <div className="text-center max-w-xl mx-auto mb-16">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-ink/50 mb-4">
@@ -103,7 +103,7 @@ export default function OurProcess() {
         <div className="mt-16 flex justify-center">
           <a
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full border border-ink/20 text-ink text-sm font-medium px-7 py-4 hover:border-ink/40 transition-colors"
+            className="inline-flex items-center justify-center gap-2 w-[230px] rounded-full border border-ink/20 text-ink text-sm font-medium py-4 hover:border-ink/40 transition-colors"
           >
             Start Your Travel Enquiry
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

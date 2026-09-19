@@ -317,7 +317,7 @@ export default function TravelPreferences() {
 
   if (submitted) {
     return (
-      <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
+      <section className="bg-cream-3 pt-[60px] sm:pt-[20px] pb-0 sm:pb-28">
         <div className="container-premium max-w-lg text-center">
           <p className="eyebrow text-gold mb-4">Thank You</p>
           <h2 className="font-cormorant font-medium text-4xl text-ink mb-4">
@@ -338,7 +338,7 @@ export default function TravelPreferences() {
   }
 
   return (
-    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
+    <section className="bg-cream-3 pt-[60px] sm:pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium">
         <div className="text-center max-w-2xl mx-auto">
           <p className="eyebrow text-gold mb-4">Your Perfect Journey</p>
@@ -351,7 +351,7 @@ export default function TravelPreferences() {
           </p>
         </div>
 
-        <div className="mt-14 max-w-5xl mx-auto bg-white rounded-2xl shadow-[0_30px_60px_-30px_rgba(11,19,32,0.15)] p-6 sm:p-10 lg:p-14">
+        <div className="mt-14 bg-white rounded-2xl shadow-[0_30px_60px_-30px_rgba(11,19,32,0.15)] p-6 sm:p-10 lg:p-14">
           <div className="h-1 w-full bg-ink/10 rounded-full overflow-hidden mb-6">
             <div
               className="h-full bg-gold transition-all duration-500"
@@ -572,7 +572,7 @@ export default function TravelPreferences() {
                 type="button"
                 disabled={!canContinue()}
                 onClick={() => setStep((s) => Math.min(totalSteps, s + 1))}
-                className="inline-flex btn-pill-gold disabled:opacity-40 disabled:cursor-not-allowed"
+                className="inline-flex w-[230px] justify-center btn-pill-gold disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 Continue
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
@@ -590,7 +590,7 @@ export default function TravelPreferences() {
                 type="button"
                 disabled={!canSubmit || submitting}
                 onClick={handleSubmit}
-                className="inline-flex btn-pill-gold disabled:opacity-40 disabled:cursor-not-allowed"
+                className="inline-flex w-[230px] justify-center btn-pill-gold disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 {submitting ? "Submitting..." : "Submit"}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

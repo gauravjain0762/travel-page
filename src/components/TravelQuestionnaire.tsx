@@ -475,7 +475,7 @@ export default function TravelQuestionnaire() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex btn-pill-gold px-10 disabled:opacity-50"
+                className="inline-flex w-[230px] justify-center btn-pill-gold disabled:opacity-50"
               >
                 {submitting ? "Submitting..." : "Submit"}
               </button>

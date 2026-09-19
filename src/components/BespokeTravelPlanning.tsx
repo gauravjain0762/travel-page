@@ -12,7 +12,7 @@ const offerings = [
 
 export default function BespokeTravelPlanning() {
   return (
-    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
+    <section className="bg-cream-3 pt-[60px] sm:pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium grid lg:grid-cols-[360px_1fr] gap-12 lg:gap-16 items-center">
         <div className="relative h-[460px] rounded-2xl overflow-hidden">
           <Image
@@ -71,7 +71,7 @@ export default function BespokeTravelPlanning() {
 
           <a
             href="/contact"
-            className="mt-10 inline-flex items-center gap-2 rounded-full bg-ink text-cream text-sm font-medium px-7 py-4 hover:bg-ink-2 transition-colors"
+            className="mt-10 inline-flex items-center justify-center gap-2 w-[230px] rounded-full bg-ink text-cream text-sm font-medium py-4 hover:bg-ink-2 transition-colors"
           >
             Plan My Trip
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

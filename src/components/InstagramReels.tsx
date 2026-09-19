@@ -37,7 +37,7 @@ const reels = [
 
 export default function InstagramReels() {
   return (
-    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
+    <section className="bg-cream-3 pt-[60px] sm:pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium">
         <div className="text-center mb-14">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-ink/50 mb-4">
@@ -193,7 +193,7 @@ export default function InstagramReels() {
           <div className="flex flex-row items-center gap-4 lg:pl-4 justify-center mb-6 lg:mb-0">
             <a
               href="#"
-              className="inline-flex items-center gap-2 rounded-full border border-ink/20 text-ink text-sm font-medium px-6 py-4 whitespace-nowrap hover:border-ink/40 transition-colors"
+              className="inline-flex items-center justify-center gap-2 w-[230px] rounded-full border border-ink/20 text-ink text-sm font-medium py-4 whitespace-nowrap hover:border-ink/40 transition-colors"
             >
               Explore Instagram Reels
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

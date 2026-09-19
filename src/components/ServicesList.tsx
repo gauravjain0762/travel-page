@@ -61,7 +61,7 @@ const services = [
 
 export default function ServicesList() {
   return (
-    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
+    <section className="bg-cream-3 pt-[60px] sm:pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-ink/50 mb-4">

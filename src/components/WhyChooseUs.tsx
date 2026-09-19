@@ -40,7 +40,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
+    <section className="bg-cream-3 pt-[60px] sm:pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium grid lg:grid-cols-[380px_1fr] gap-12 lg:gap-20 items-center">
         <div className="relative h-[460px] rounded-2xl overflow-hidden">
           <Image
@@ -93,7 +93,7 @@ export default function WhyChooseUs() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center gap-2 rounded-full border border-ink/20 text-ink text-sm font-medium px-6 py-4 hover:border-ink/40 transition-colors"
+            className="mt-10 inline-flex items-center justify-center gap-2 w-[230px] rounded-full border border-ink/20 text-ink text-sm font-medium py-4 hover:border-ink/40 transition-colors"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <rect

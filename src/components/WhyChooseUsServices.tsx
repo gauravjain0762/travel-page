@@ -42,7 +42,7 @@ const features = [
 
 export default function WhyChooseUsServices() {
   return (
-    <section className="bg-cream-3 pt-[20px] pb-0 sm:pb-28">
+    <section className="bg-cream-3 pt-[60px] sm:pt-[20px] pb-0 sm:pb-28">
       <div className="container-premium grid lg:grid-cols-[480px_1fr] gap-12 lg:gap-16 items-center">
         <div className="relative h-[300px] sm:h-[380px] rounded-2xl overflow-hidden">
           <Image

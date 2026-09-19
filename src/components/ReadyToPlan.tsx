@@ -1,6 +1,6 @@
 export default function ReadyToPlan() {
   return (
-    <section className="relative overflow-hidden bg-ink pt-[20px] pb-10 sm:pb-40">
+    <section className="relative overflow-hidden bg-ink pt-[60px] sm:pt-[20px] pb-10 sm:pb-40">
       <div
         className="absolute inset-0"
         style={{
@@ -20,7 +20,7 @@ export default function ReadyToPlan() {
         <div className="mt-10 flex justify-center">
           <a
             href="/start-planning"
-            className="inline-flex items-center gap-2 rounded-full bg-cream text-ink text-sm font-medium px-7 py-4 hover:bg-cream-2 transition-colors"
+            className="inline-flex items-center justify-center gap-2 w-[230px] rounded-full bg-cream text-ink text-sm font-medium py-4 hover:bg-cream-2 transition-colors"
           >
             Start Planning
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

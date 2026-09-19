@@ -49,7 +49,7 @@ export default function ContactSection() {
         </p>
 
         <div className="mt-10 flex justify-center">
-          <a href="/start-planning" className="inline-flex btn-pill-gold">
+          <a href="/start-planning" className="inline-flex w-[230px] justify-center btn-pill-gold">
             Start Planning
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
               <path
@@ -143,7 +143,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={status === "submitting"}
-                className="inline-flex btn-pill-gold disabled:opacity-50"
+                className="inline-flex w-[230px] justify-center btn-pill-gold disabled:opacity-50"
               >
                 {status === "submitting" ? "Sending..." : "Submit"}
               </button>
