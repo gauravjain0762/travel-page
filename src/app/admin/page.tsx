@@ -56,7 +56,7 @@ export default async function AdminDashboard() {
         <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
           <div>
             <p className="text-xs tracking-[0.2em] uppercase text-cream/60">
-              Wanderly
+              Ri-Imagine Travel
             </p>
             <h1 className="font-cormorant font-medium text-xl">Admin Dashboard</h1>
           </div>

@@ -1,17 +1,19 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Travel Services", href: "/travel-services" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
 const socials = [
   {
     label: "Instagram",
+    href: "https://www.instagram.com/ri.imagine.travel/",
     icon: (
       <>
         <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.5" />
@@ -31,16 +33,15 @@ export default function SiteFooter() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M12 4l8 15H4L12 4z"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <Image
+                src="/logo.jpg"
+                alt="Ri-Imagine Travel"
+                width={40}
+                height={40}
+                className="h-9 w-9 rounded-full object-cover"
+              />
               <span className="text-sm font-semibold tracking-[0.15em] uppercase text-ink">
-                Wanderly Travel Co.
+                Ri-Imagine Travel
               </span>
             </Link>
 
@@ -48,7 +49,9 @@ export default function SiteFooter() {
               {socials.map((s) => (
                 <a
                   key={s.label}
-                  href="#"
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={s.label}
                   className="text-ink/70 hover:text-ink transition-colors"
                 >
@@ -80,7 +83,9 @@ export default function SiteFooter() {
             {socials.map((s) => (
               <a
                 key={s.label}
-                href="#"
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={s.label}
                 className="text-ink/70 hover:text-ink transition-colors"
               >
@@ -94,7 +99,7 @@ export default function SiteFooter() {
 
         <div className="border-t border-ink/10 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-ink/45">
-            © {new Date().getFullYear()} Wanderly Travel Co. All rights
+            © {new Date().getFullYear()} Ri-Imagine Travel. All rights
             reserved.
           </p>
         </div>

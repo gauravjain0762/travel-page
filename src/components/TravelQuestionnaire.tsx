@@ -159,9 +159,9 @@ export default function TravelQuestionnaire() {
       <div className="container-premium max-w-3xl">
         <div className="text-center mb-10">
           <h1 className="font-cormorant text-4xl sm:text-5xl uppercase tracking-[0.12em] text-ink">
-            Wanderly
+            Ri-Imagine
           </h1>
-          <p className="font-logo text-2xl text-gold mt-1">Travel Co.</p>
+          <p className="font-logo text-2xl text-gold mt-1">Travel</p>
         </div>
 
         <div className="rounded-2xl overflow-hidden shadow-[0_30px_60px_-30px_rgba(11,19,32,0.2)]">
