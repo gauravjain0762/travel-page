@@ -103,7 +103,7 @@ export default function Hero() {
               />
             </svg>
           </a>
-          <a href="/travel-services" className="inline-flex w-[230px] btn-pill-outline">
+          <a href="/about" className="inline-flex w-[230px] btn-pill-outline">
             Explore Our Services
           </a>
         </div>
