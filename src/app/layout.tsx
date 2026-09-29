@@ -40,9 +40,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Wanderly Travel Co. | Luxury Travel Advisor",
+  title: "Ri-Imagine Travel | Luxury Travel Advisor",
   description:
-    "Wanderly is a luxury travel advisory crafting bespoke itineraries, exclusive access, and 24/7 concierge support for the world's most discerning travelers.",
+    "Ri-Imagine Travel is a luxury travel advisory crafting bespoke itineraries, exclusive access, and 24/7 concierge support for the world's most discerning travelers.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

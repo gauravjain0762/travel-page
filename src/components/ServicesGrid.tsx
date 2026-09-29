@@ -48,7 +48,7 @@ export default function ServicesGrid() {
             travel experiences that match your style, interests and dreams.
           </p>
           <a
-            href="/travel-services"
+            href="/about"
             className="mt-8 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-ink hover:text-gold transition-colors"
           >
             Explore All Services
