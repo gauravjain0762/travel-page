@@ -192,7 +192,9 @@ export default function InstagramReels() {
 
           <div className="flex flex-row items-center gap-4 lg:pl-4 justify-center mb-6 lg:mb-0">
             <a
-              href="#"
+              href="https://www.instagram.com/ri.imagine.travel/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 w-[230px] rounded-full border border-ink/20 text-ink text-sm font-medium py-4 whitespace-nowrap hover:border-ink/40 transition-colors"
             >
               Explore Instagram Reels
