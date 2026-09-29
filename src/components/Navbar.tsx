@@ -1,13 +1,14 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Travel Services", href: "/travel-services" },
-  { label: "Instagram", href: "#" },
+  { label: "About", href: "/about" },
+  { label: "Instagram", href: "https://www.instagram.com/ri.imagine.travel/" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -41,31 +42,14 @@ export default function Navbar({
     >
       <div className="container-premium flex items-center justify-between py-6">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className={`leading-none ${textLight ? "text-cream" : "text-ink"}`}>
-            <span className="font-logo text-3xl">Wanderly</span>
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="inline-block -translate-y-3 ml-0.5 text-gold-2"
-            >
-              <path
-                d="M21 3L3 10.5l7 2.5m11-10l-4.5 15-6-6.5m10.5-8.5L9.5 15.5"
-                stroke="currentColor"
-                strokeWidth="1.3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <p
-              className={`text-[0.6rem] tracking-[0.32em] mt-0.5 ${
-                textLight ? "text-cream/60" : "text-ink/60"
-              }`}
-            >
-              TRAVEL CO.
-            </p>
-          </div>
+          <Image
+            src="/logo.jpg"
+            alt="Ri-Imagine Travel"
+            width={52}
+            height={52}
+            className="h-12 w-12 rounded-full object-cover"
+            priority
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-10">
@@ -75,6 +59,8 @@ export default function Navbar({
               <Link
                 key={link.label}
                 href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className={`relative text-sm pb-1 transition-colors ${
                   textLight
                     ? "text-cream/85 hover:text-cream"
@@ -145,6 +131,8 @@ export default function Navbar({
                 <Link
                   key={link.label}
                   href={link.href}
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   onClick={() => setOpen(false)}
                   className={`text-sm ${
                     active ? "text-cream font-semibold" : "text-cream/85"

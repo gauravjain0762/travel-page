@@ -40,7 +40,7 @@ export default function AdminLoginPage() {
         className="w-full max-w-sm bg-white rounded-2xl shadow-[0_30px_60px_-30px_rgba(11,19,32,0.2)] p-8"
       >
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">
-          Wanderly
+          Ri-Imagine Travel
         </p>
         <h1 className="font-cormorant font-medium text-3xl text-ink mb-6">Admin Login</h1>
 
